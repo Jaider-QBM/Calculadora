@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    min-height: 100vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 2%, rgba(68,92,78,1) 91%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora{
+    background-color: rgba(0, 0, 0, 0.738);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 350px;
+    padding: 1em;
+    border-radius: 1em;
+    border: 5px solid black;
+    gap: 0.5rem;
+}
+
+.pantalla{
+    grid-column: 1/5;
+    background-color: rgb(255, 255, 255);
+    padding: 0.5em;
+    font-size: 3rem;
+    text-align: right;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.title-logo{
+    padding: 1em 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1/5;
+}
+
+.ver{
+    grid-column: 1/5;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: 100;
+}
+
+.title-logo img{
+    width: 6em;
+}
+
+.title-logo p{
+    color: rgba(255, 255, 255, 0.835);
+}
+
+.boton {
+    background-color: rgb(36, 35, 35);
+    color: azure;
+    border: 1px solid rgba(255, 255, 255, 0.724);
+    padding: 1rem;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .8rem;
+    cursor: pointer;
+}
+
+.boton:hover{
+    background: white;
+    color: black;
+}
+
+#cero{
+    grid-column: span 2;
+}
+
+#igual{
+    grid-row: span 2;
+    background: rgb(2, 2, 170);
+}
+
+#igual:hover{
+    background: rgb(10, 56, 10);
+    color: black;
+}
+
+#clean{
+    background: rgb(2, 2, 170);
+}
+
+#clean:hover{
+    background: rgb(10, 56, 10);
+    color: black;
+}
+
+#delete{
+    background: rgb(2, 2, 170);
+}
+
+#delete:hover{
+    background: rgb(10, 56, 10);
+    color: black;
+}
